@@ -29,7 +29,7 @@ body{
 .loading-text{
     font-size: 50px;
     font-weight: 700;
-    color:indigo;
+    color:#ab571c;
     z-index: 10;
     filter: blur(0);
 }
