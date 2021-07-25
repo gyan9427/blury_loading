@@ -6,9 +6,15 @@ let int = setInterval(blurEffect,30);
 function blurEffect(){
     load++;
     titleText.innerText = `${load}%`;
-    titleText.style.opacity = `${parseInt(Math.ceil(load/100))}` 
+    titleText.style.opacity = `${1-scale(load)}`; 
     if(load > 99){
         clearInterval(int);
-    }
 
+    }
+    backGrd.style.filter = `blur(${100 - load}px)`
+}
+
+
+function scale(val){
+    return (val/100);
 }
